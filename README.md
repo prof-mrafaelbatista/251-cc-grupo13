@@ -1,6 +1,6 @@
 # 251-cc-grupo13
 Grupo :
-*Flavia
-*Tamires Carvalho da Silva
-Lucas
+*Flavia<br>
+*Tamires Carvalho da Silva<br>
+Lucas<br>
 Arthur
