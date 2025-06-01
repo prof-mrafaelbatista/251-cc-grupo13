@@ -27,8 +27,14 @@ header > .interface {
 
 }
 header a {
-    color: white;
-
+    color: rgb(121, 120, 120);
+    text-decoration: none; /* Tira o Sublinhado do menu*/
+    display: inline-block; /* Detalhe lembrando que o Zoom so funciona se tiver as propriendade do inline e tendo as propriedas do block*/
+    transition: 2s;/* Suavisa o efeito do Zoom*/
+}
+header a:hover {
+color: #fff; /* Faz a cor ficar mais clara quando passar o mouse nas letras de navvegação*/
+transform: scale(1.05); /* Dar o Zoom nas letras de navvegação*/
 }
 header nav ul {
     list-style-type: none;
@@ -38,4 +44,19 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px; /* Deixa o o em cima e em baixo mais esquerda e direita 40px*/
 
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #B58ADF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+header .btn-contato button:houver {
+    box-shadow: 0px 0px 8px #b58adf; /* Horizontal e Vertical 0 e espalhamento em 8px  (dar um efeito de Sombreado)*/
 }
