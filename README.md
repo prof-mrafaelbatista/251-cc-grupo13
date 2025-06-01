@@ -1,6 +1,6 @@
 # 251-cc-grupo13
 Grupo :<br>
-Flavia<br>
+Flávia Rhuana Pereira Sales<br>
 Tamires Carvalho da Silva<br>
-Lucas<br>
-Arthur
+Lucas Aguiar Braga Viana<br>
+Arthur Vinício da Silva Barbosa
