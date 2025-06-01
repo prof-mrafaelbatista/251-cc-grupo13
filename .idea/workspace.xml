@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bda395f7-33c5-40d7-8404-5ee34d501765" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/CSS/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/Areia - Egito.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/Banner-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/cadeado.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icon - e-mail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icon - usuario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icone - Coroa de louros.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icone - Nefertiti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icone - faraó.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/icone- piramide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/image -1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/lupa .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/IMAGENS/vaso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/Loja.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Egito_Grecia/index.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2xtLJwFTemPgN2k9IJOp8dgBI1l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Front-End"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bda395f7-33c5-40d7-8404-5ee34d501765" name="Changes" comment="" />
+      <created>1748752365267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748752365267</updated>
+    </task>
+    <servers />
+  </component>
+</project>
