@@ -14,7 +14,7 @@ Este projeto foi desenvolvido utilizando **Flask** com **Python**, integrando co
 .
 
 📷 Telas do Projeto
-Adicione aqui até 5 imagens das telas do sistema:
+
 
 * Tela 1
 
