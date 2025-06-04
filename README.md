@@ -16,15 +16,16 @@ Este projeto foi desenvolvido utilizando **Flask** com **Python**, integrando co
 📷 Telas do Projeto
 Adicione aqui até 5 imagens das telas do sistema:
 
-* 
+* Tela 1
 
 ![Captura de tela 2025-06-04 171908](https://github.com/user-attachments/assets/2171990d-ff8c-4213-8d61-1cb8cbab8db5)
-
+* Tela 2
 ![Captura de tela 2025-06-04 171936](https://github.com/user-attachments/assets/e6930b1a-a9df-41c2-9464-06e2676690b7)
-
-
+* Tela 3
 ![Captura de tela 2025-06-04 171955](https://github.com/user-attachments/assets/f15af784-dbd9-4d10-b46d-b33f04dd7aab)
+* Tela 4
 ![Captura de tela 2025-06-04 172012](https://github.com/user-attachments/assets/e3fc88f1-94e1-4304-9ed7-a35414499709)
+* Tela 5
 
 ![Captura de tela 2025-06-04 172029](https://github.com/user-attachments/assets/a45790fb-c3e2-476d-87db-7df13d513913)
 
