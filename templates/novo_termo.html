@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block conteudo %}
+<h1 style="text-align: center">Adicionar Termo</h1>
+<div style="background: linear-gradient(55deg, #000000, #008B8B); padding: 10px; border-radius: 10px; border: 1px solid white; max-width: 800px; margin: auto; margin-top: 40px;">
+
+    <form method="POST" action="{{ url_for('criar_termo') }}">
+
+        <!-- Seção 1: Termo -->
+        <div style="margin-top: 20px; text-align: center">
+            <h3 style="font-size: 1.5rem">Termo</h3>
+            <input type="text" id="termo" name="termo" required
+                   style="width: 95%; padding: 10px; border-radius: 5px; border: none;">
+        </div>
+
+        <!-- Seção 2: Definição -->
+        <div style="margin-top: 20px; text-align: center">
+            <h3 style="font-size: 1.5rem">Definição</h3>
+            <textarea id="definicao" name="definicao" required
+                      style="width: 95%; height: 200px; padding: 10px; border-radius: 5px; border: none;"></textarea>
+        </div>
+
+        <!-- Botão -->
+        <div style="text-align: center; margin-top: 15px">
+            <button type="submit" style="background-color: purple; color: white; padding: 10px 20px; border: 1px solid white; border-radius: 5px;">
+                ➕ Adicionar
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

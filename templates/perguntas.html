@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block title %}Chatbot | FlaskEdu{% endblock %}
+
+{% block conteudo %}
+
+<style>
+    body {
+        background-color: #000;
+        font-family: 'Segoe', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+    }
+
+    .chat-container {
+        background-color: #121212;
+        max-width: 600px;
+        height: 500px; /* altura fixa */
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat-messages {
+        flex: 1;
+        overflow-y: auto; /* rolagem apenas nessa parte */
+        padding-right: 10px;
+    }
+
+    .resposta {
+        background-color: #1e1e1e;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .resposta h3 {
+        color: #8ab4f8;
+        margin-bottom: 10px;
+    }
+
+    .resposta p {
+        margin: 0;
+        color: #ccc;
+    }
+
+    .responder-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .responder-form input[type="text"] {
+        flex: 1;
+        padding: 12px 15px;
+        border-radius: 25px;
+        border: 1px solid #333;
+        background-color: #1e1e1e;
+        color: #fff;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    .responder-form input[type="text"]:focus {
+        border-color: #8ab4f8;
+    }
+
+    .send-button {
+        background: transparent; /* Fundo transparente */
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .send-button img {
+        width: 24px;
+        height: 24px;
+        filter: invert(35%) sepia(85%) saturate(750%) hue-rotate(230deg); /* roxo */
+        transition: transform 0.2s ease;
+    }
+
+    .send-button:hover img {
+        transform: scale(1.2);
+    }
+</style>
+
+<div class="chat-container">
+    <div class="chat-messages">
+        <h2>Faça sua Pergunta ao Chatbot</h2>
+
+        {% if resposta %}
+            <div class="resposta">
+                <h3>Resposta do Gemini:</h3>
+                <p>{{ resposta }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="card-footer">
+        <form action="/responder" method="post" class="responder-form">
+            <input type="text" name="pergunta" placeholder="Digite sua pergunta..." required>
+            <button type="submit" class="send-button">
+                <img src="{{ url_for('static', filename='images/paper-plane.png') }}" alt="Enviar">
+            </button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

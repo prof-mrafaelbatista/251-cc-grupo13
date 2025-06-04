@@ -1,0 +1,105 @@
+﻿{% extends 'base.html' %}
+
+{% block title %} Início | FlaskEdu{% endblock %}
+
+{% block conteudo %}
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+
+  .banner-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner-container img {
+    object-fit: cover;
+    display: block;
+    width:100%
+  }
+
+  .inicio-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 90%;
+  }
+
+  .inicio-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+    margin-top: 100px;
+     text-align: center;
+
+  }
+
+  .inicio-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .inicio-content h2 {
+    margin-top: 30px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-left: 5px solid #8a2be2;
+    border-radius: 8px;
+    font-size: 1.3rem;
+  }
+
+  .h2, h3, h4 {
+    margin-bottom: 10px;
+   }
+
+  .quadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20 px;
+    padding: 40px 20px;
+    }
+
+  .quadro {
+    background: linear-gradient(55deg, #000000, purple);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin-top: 40px;
+    border: 1px solid yellow;
+    }
+</style>
+
+    <img src="{{ url_for('static', filename='images/banner.png') }}" alt="Banner" width="100%" height="auto">
+
+    <div class="inicio-content">
+    <h1>Projeto Flask + Gemini: Interação com IA para Fundamentos de Programação</h1>
+    </div>
+    <p class="quadro"> Este site foi desenvolvido por estudantes de Ciência da Computação e Sistemas para Internet com o objetivo de facilitar o aprendizado de programação em Python. O projeto foi criado como parte das atividades da disciplina de Introdução à Programação, abrangendo os principais fundamentos da linguagem — desde estruturas de seleção e repetição, até funções, procedimentos e tratamento de exceções.
+
+            <h3 class="quadro">Além disso, oferecemos um recurso inovador: você pode tirar dúvidas em tempo real com o suporte da API Gemini, nossa inteligência artificial integrada para potencializar sua experiência de aprendizado.</h3>
+
+{% endblock %}

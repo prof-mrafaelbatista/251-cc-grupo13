@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block title %}Glossário {% endblock %}
+
+{% block conteudo %}
+
+<style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            color: white
+        }
+        th, td {
+            border: 1px solid #D5D5D5;
+            padding: 10px;
+            text-align: left;
+            background-color: #363636;
+        }
+        th {
+            background-color: #1C1C1C;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        h1 {
+        text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="header.css">
+<h1> Glossário de Termos</h1>
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Termo</th>
+            <th>Definição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in glossario %}
+        <tr {% if editar_id is defined and loop.index0 == editar_id %} style="background-color: #333;" {% endif %}>
+            <td>{{ loop.index }}</td>
+
+            {% if editar_id is defined and loop.index0 == editar_id %}
+            <form action="{{ url_for('editar_termo', termo_id=loop.index0) }}" method="POST">
+                <td>
+                    <div style="display: flex; gap: 15px;">
+                        <input  type="text" name="termo" value="{{ item[0] }}" required
+                        style="width: 95%; padding: 6px; border-radius: 5px; border: none;"></td>
+                    <td>
+                        <input type="text" name="definicao" value="{{ item[1] }}" required
+                        style="width: 95%; padding: 6px; border-radius: 5px; border: none;"></td>
+                    <td style="text-align: center;">
+                        <button type="submit" style="background-color: #6B8E23; padding: 10px; border: 1px solid #D5D5D5; border-radius: 10px; color: white;">💾 Salvar</button>
+                    </div>
+                </td>
+            </form>
+            {% else %}
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td style="text-align: center;">
+                    <a href="{{ url_for('editar_linha', termo_id=loop.index0) }}">
+                        <button style="background-color: #483D8B; padding: 10px; color: white; border-radius:10px; border: 1px solid #D5D5D5;">✏️ Editar</button>
+                    </a>
+                    <form method="POST" action="{{ url_for('excluir_termo', termo_id=loop.index0) }}" style="display:inline;">
+                        <button styletype="submit" style="background-color: #e74c3c; padding: 10px; color: white; border: 1px solid #D5D5D5; border-radius:10px;">🗑️ Excluir</button>
+                    </form>
+                </td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{{ url_for('novo_termo') }}">
+        <button style="background-color: purple; color: white; padding: 10px; border-radius:10px; border: 1.3px solid white">➕ Adicionar Termo</button>
+    </a>
+</div>
+
+{% endblock %}

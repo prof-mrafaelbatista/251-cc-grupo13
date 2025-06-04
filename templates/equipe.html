@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block title %}Equipe | FlaskEdu{% endblock %}
+
+{% block conteudo %}
+<style>
+    .conteudo {
+    padding:40px 4%;
+    padding-bottom:30px;
+    }
+    .flex{
+    display:flex;
+    }
+.img-topo-site img {
+    width: 500px; /* Ou o tamanho que você quiser */
+    height: auto; /* Mantém proporção */
+    }
+    section.inicio-do-site{
+    padding:40px 4%;
+    }
+  section.inicio-do-site .flex{
+    align-items:center;
+    justify-content:center;}
+    .img-topo-site {
+  display: flex;
+  flex-direction: column; /* mantém os membros empilhados */
+  gap: 30px;
+}
+
+.membro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #111; /* opcional para destaque */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.membro img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.membro .info h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.membro .info h4 h3 {
+  margin: 20px 0 0 0;
+  font-weight: 400;
+  color: #ccc;
+}
+  .social-icons a.github {
+  color: #8a2be2; /* GitHub - cinza escuro */
+}
+
+.social-icons a.linkedin {
+  color: #8a2be2; /* LinkedIn - azul */
+}
+
+.social-icons a.instagram {
+  color: #8a2be2; /* Instagram - rosa */
+}
+    .social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 50px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8a2be2; /* ou outra cor de destaque */
+}
+</style>
+  <main>
+        <section class="inicio-do-site">
+
+<div class="interface">
+    <div class="flex">
+        <div class="txt-topo-site">
+<h1><span>EQUIPE: </span> Flask<span>Edu</span> </h1>
+            <div class="conteudo">
+
+            <h2><p style="text-transform: uppercase;">Transformamos ideias em realidade digital — conheça quem faz isso acontecer<span>!</span></p></h2>
+
+        <div class="img-topo-site">
+            <div class="membro">
+            <img src="/static/images/equipe%201.png" alt="Arthur">
+                <div class="info">
+            <h2>Arthur Vinício da Silva Barbosa</h2>
+                    <h3>Curso: Ciência da Computação</h3>
+            <h4>Front-End</h4>
+
+                        <div class="social-icons">
+                            <a href="https://github.com/artvsb" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/arthur-barbosa-a195b7369" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/artvsb" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                     </div><!--membro1-->
+                 </div><!--membro1-->
+                <div class="membro">
+            <img src="/static/images/equipe%202.png" alt="Lucas">
+                    <div class="info">
+            <h2>Lucas Aguiar Braga Viana</h2>
+                        <h3>Curso: Sistemas para Internet</h3>
+            <h4>Back-End</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/llucasaguiar" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="www.linkedin.com/in/lucas-aguiar-braga-viana" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/vianalucasab" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                        </div><!--membro1-->
+                 </div><!--membro1-->
+
+            <div class="membro">
+
+            <img src="/static/images/equipe%203.png" alt="Flávia">
+
+            <div class="info">
+            <h2>Flávia Rhuana Pereira Sales</h2>
+                <h3>Curso: Ciência da Computação</h3>
+            <h4>Back-End</h4>
+
+                        <div class="social-icons">
+                            <a href="https://github.com/flaviarhuana" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="www.linkedin.com/in/flávia-rhuana-9508021ba" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/flaviarhuana" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+            </div><!--membro1-->
+                 </div><!--membro1-->
+            <div class="membro">
+            <img src="/static/images/equipe.png" alt="Tamires">
+                <div class="info">
+            <h2> Tamires Carvalho da Silva</h2>
+                    <h3>Curso: Sistemas para internet</h3>
+            <h4>Front-End</h4>
+
+                        <div class="social-icons">
+                           <a href="https://github.com/carvalhotamires" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/carvalho-tamires" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/tamiresc.s" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+             </div><!--membro1-->
+                 </div><!--membro1-->
+    </div> <!--interface-->
+             </div><!--flex-->
+            </div><!--txt-topo-site-->
+            </div><!--img-topo-site-->
+            </div> <!--img-logo-->
+
+        </section> <!--inicio-do-site-->
+      </div> </main>
+{% endblock %}

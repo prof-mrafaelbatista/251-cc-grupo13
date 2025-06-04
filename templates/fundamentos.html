@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+
+{% block title %} Fundamentos {% endblock %}
+
+{% block conteudo %}
+
+<style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #000;
+  }
+
+  .banner-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner-container img {
+    object-fit: cover;
+    display: block;
+    width:100%
+  }
+
+  .inicio-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 90%;
+  }
+
+  .inicio-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 30px;
+    margin-top: 100px;
+     text-align: center;
+
+  }
+
+  .inicio-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .inicio-content h2 {
+    margin-top: 30px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-left: 5px solid #8a2be2;
+    border-radius: 8px;
+    font-size: 1.3rem;
+  }
+
+  .h2, h3, h4 {
+    margin-bottom: 10px;
+   }
+
+  .quadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20 px;
+    padding: 40px 20px;
+    }
+
+  .quadro {
+    background: linear-gradient(55deg, #000000, purple);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin-top: 40px;
+    border: 1px solid yellow;
+    }
+</style>
+
+<section class="quadro-container">
+        <h2 style="color: #FFD700">Fundamentos da programação em Python</h2>
+        <div class="quadro">
+            <h4 style="color: #FFD700">Estruturas de seleção</h4>
+            <p>As estruturas de seleção, também conhecidas como estruturas condicionais, são utilizadas para controlar o fluxo de execução do código dependendo de uma condição. Elas são essenciais para tomar decisões dentro de um programa. As estruturas mais comuns são if, elif e else.</p>
+            <p>if (Se): A estrutura if avalia uma condição. Se a condição for verdadeira, o bloco de código dentro da estrutura if é executado. Caso a condição seja falsa, o bloco é ignorado, e o código continua a partir da próxima instrução.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_if.png') }}" alt="exemplo 'if'">
+
+            <p>else (Senão): A estrutura else é utilizada em conjunto com a estrutura if. Se a condição do if for falsa, o bloco de código dentro da estrutura else é executado.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_else.png') }}" alt="exemplo 'else'">
+
+            <p>elif (Senão Se): A estrutura elif permite adicionar condições adicionais para verificar se uma condição anterior foi falsa e, em seguida, executar um bloco de código diferente se a condição elif for verdadeira.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_elif.png') }}" alt="exemplo 'elif'">
+
+        </div>
+        <div class="quadro">
+            <h4 style="color: #FFD700">Estruturas de repetição</h4>
+            <p>As estruturas de repetição são utilizadas para executar um bloco de código várias vezes. As principais estruturas de repetição em Python são for e while. O for é usado quando se sabe o número exato de repetições ou quando se precisa iterar sobre um iterável, como uma lista ou string. O while é usado quando a repetição depende de uma condição lógica, que deve ser verdadeira para o loop continuar. </p>
+            <p>Na estrutura de repetição for sua sintaxe vem representada da seguinte forma: "for variável_de_controle in objeto_iterável:", onde a variável_de_controle recebe o valor de cada elemento do objeto iterável; e o objeto_iterável pode ser uma lista, tupla, string, conjunto, etc.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_for.png') }}" alt="exemplo 'for'">
+
+            <p>Na estrutura de repetição while sua sintaxe vem representada da seguinte forma: "while condição:", onde a condição é uma expressão lógica que determina se o loop continua.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_while.png') }}" alt="exemplo 'while'">
+
+        </div>
+
+        <div class="quadro">
+            <h4 style="color: #FFD700">Vetores e Matrizes</h4>
+            <p>Vetores (ou listas) são estruturas que armazenam uma sequência de elementos. Matrizes são listas de listas, representando dados em duas dimensões. Essas estruturas são fundamentais para armazenar e manipular coleções de dados, como séries temporais, tabelas ou grades de pixels.</p>
+
+            <div>
+                <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_lista.png') }}" alt="exemplo 'while'">
+                <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_matriz.png') }}" alt="exemplo 'while'">
+            </div>
+
+        </div>
+
+        <div class="quadro">
+            <h4 style="color: #FFD700">Funções e Procedimentos</h4>
+            <p>Funções e procedimentos são blocos de código reutilizáveis que executam tarefas específicas. A principal diferença reside no retorno de valor: as funções retornam um valor, enquanto os procedimentos não. </p>
+            <p>Uma função é um bloco de código que realiza uma tarefa específica e pode receber argumentos como entrada e retornar um valor como saída. As funções são projetadas para retornar um valor, o que permite que o código que as chama possa utilizar o resultado da execução.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_funcao.png') }}" alt="exemplo função">
+
+            <p>Um procedimento é um bloco de código que executa uma tarefa, mas não é projetado para retornar um valor. Procedimentos não retornam valores, ou seja, a sua execução pode ter efeitos colaterais (como imprimir algo na tela ou modificar dados), mas não retornam um valor que pode ser utilizado pelo código que os chama.</p>
+
+            <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_procedimento.png') }}" alt="exemplo função">
+
+        </div>
+
+        <div class="quadro">
+            <h4 style="color: #FFD700">Tramento de exceção</h4>
+            <p>O tratamento de exceções permite que o código lide com erros de forma controlada, em vez de interromper a execução do programa. A estrutura básica para tratamento de exceções é try...except, que encapsula o código que pode lançar uma exceção e, em seguida, captura e trata a exceção se ocorrer.</p>
+
+            <div>
+                <img style="margin: 20px 20px;" src="{{ url_for('static', filename='images/exemplo_excecao.png') }}" alt="exemplo tratamento de exceção">
+            </div>
+
+            <p>O "try" contém o código que pode lançar uma exceção. Se uma exceção ocorrer durante a execução deste bloco, a execução é interrompida e o controle passa para a cláusula except correspondente.</p>
+            <p>O "except" contém o código a ser executado se uma exceção específica for lançada no bloco try. Você pode ter várias cláusulas except para lidar com diferentes tipos de exceções.</p>
+            <p>Por fim, o "except Exception as e:" esta cláusula captura todas as exceções que não forem especificamente tratadas por outras cláusulas except. e é uma variável que armazena a instância da exceção capturada.</p>
+        </div>
+
+    </section>
+
+
+</div>
+
+{% endblock %}
