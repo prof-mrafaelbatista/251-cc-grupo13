@@ -88,7 +88,7 @@ try:
 except ZeroDivisionError as e:
     print("Erro:", e)
 
-🤖 Integração com IA Gemini
+```🤖 Integração com IA Gemini
 Desenvolvemos um chat interativo utilizando a API do Google Gemini para auxiliar no ensino dos fundamentos de programação, promovendo um aprendizado mais dinâmico.
 🏆 Conclusão
 Este projeto demonstrou a aplicação prática dos fundamentos de programação, integração com IA e desenvolvimento colaborativo. Esperamos que ele seja útil como material de estudo e inspiração!
