@@ -94,7 +94,7 @@ Desenvolvemos um chat interativo utilizando a API do Google Gemini para auxiliar
 Este projeto demonstrou a aplicação prática dos fundamentos de programação, integração com IA e desenvolvimento colaborativo. Esperamos que ele seja útil como material de estudo e inspiração!
 
 ⭐ Agradecimentos
-Agradecemos aos professores e colegas que colaboraram no desenvolvimento deste projeto.
+Agradecemos ao professor e colegas que colaboraram no desenvolvimento deste projeto.
 
 
 
